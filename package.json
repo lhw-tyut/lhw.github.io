@@ -1,9 +1,9 @@
 {
-    "name": "by-blog",
-    "title": "BY Blog",
-    "author": "BY <qiubaiyingios@163.com>",
+    "name": "lhw-blog",
+    "title": "LHW Blog",
+    "author": "BY <lhw_tyut@163.com>",
     "version": "1.7.0",
-    "homepage": "http://qiubaiying.github.io",
+    "homepage": "http://lhw-tyut.github.io",
     "repository": {
         "type": "git",
         "url": "https://github.com/qiubaiying/qiubaiying.github.io"
