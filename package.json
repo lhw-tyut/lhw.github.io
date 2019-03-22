@@ -1,12 +1,12 @@
 {
     "name": "lhw-blog",
     "title": "LHW Blog",
-    "author": "BY <lhw_tyut@163.com>",
+    "author": "LHW <lhw_tyut@163.com>",
     "version": "1.7.0",
     "homepage": "http://lhw-tyut.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lhw-tyut/lhw-tyut.github.io.git"
+        "url": "https://github.com/lhw-tyut/lhw-tyut.github.io"
     },
     "bugs": "https://github.com/lhw-tyut/lhw-tyut.github.io/issues",
     "devDependencies": {
