@@ -101,7 +101,7 @@ service-worker: true
 friends: [
     {
         title: "CSDN·永泉狂客",
-        href: "https://me.csdn.net/qq_37287621"
+        href: "https://blog.csdn.net/qq_37287621"
     },{
         title: "python",
         href: "https://www.python.org/"
