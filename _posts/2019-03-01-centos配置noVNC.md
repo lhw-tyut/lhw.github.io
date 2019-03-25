@@ -10,11 +10,11 @@ tags:
     - VNC
 ---
 
-## 关闭防火墙
+## 1.关闭防火墙
 
 systemctl stop firewalld
 
-## 1.宿主机
+## 2.宿主机
 
 **安装noVNC：**
 git clone git://github.com/kanaka/noVNC
@@ -24,7 +24,7 @@ git clone git://github.com/kanaka/noVNC
 cd ./noVNC/utils/
 openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
 
-## 2.客户机
+## 3.客户机
 
 **安装vncserver：**
 yum install -y epel*
@@ -34,12 +34,12 @@ yum install -y tigervnc-server
 vncserver :1
 
 ## 操作示例:
-
 客户机 ip:192.168.23.100
 在客户机执行：vncserver :1
 
 宿主机 ip:192.168.23.50
 进入：noVNC目录下:
+
 执行：./utils/launch.sh --vnc 192.168.23.100:5901
 
 最后 浏览器:http://192.168.23.50:6080/vnc.html
