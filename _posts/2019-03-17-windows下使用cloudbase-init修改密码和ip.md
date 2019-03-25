@@ -14,8 +14,8 @@ tags:
 ## 一.安装windows server 2016
 ## 二.做一些简单配置
 - 设置密码策略为 disable
-Win+R 打开【运行】对话框，输入   gpedit.msc
-
+Win+R 打开【运行】对话框，输入 gpedit.msc
+![](https://img-blog.csdnimg.cn/20190325150306648.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3Mjg3NjIx,size_16,color_FFFFFF,t_70)
 ## 三.下载cloudbase-init
 - 设置配置文件cloudbase-init.conf
 本例使用openstack(configuration drive),从cdrom,vfat或原始磁盘/分区中检索数据,所以需要创建一个label为config-2,大小为64MB，文件类型为vfat(fat32)的分区.
@@ -62,6 +62,9 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
 ## 四. 创建元数据分区
 1. Win+R 打开【运行】对话框，输入 diskmgmt.msc
 2. 创建config-2分区
+![](https://img-blog.csdnimg.cn/20190325150354678.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3Mjg3NjIx,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20190325150344309.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3Mjg3NjIx,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/2019032515032332.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3Mjg3NjIx,size_16,color_FFFFFF,t_70)
 3. 写入元数据
 ```
 # meta_data.json
