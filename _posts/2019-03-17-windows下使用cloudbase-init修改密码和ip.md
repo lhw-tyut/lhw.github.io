@@ -16,7 +16,9 @@ tags:
 - 设置密码策略为 disable
 Win+R 打开【运行】对话框，输入 gpedit.msc
 ![](https://s2.ax1x.com/2019/03/25/AtUyrt.jpg)   
-## 三.下载cloudbase-init
+
+## 三.下载cloudbase-init   
+
 - 设置配置文件cloudbase-init.conf
 本例使用openstack(configuration drive),从cdrom,vfat或原始磁盘/分区中检索数据,所以需要创建一个label为config-2,大小为64MB，文件类型为vfat(fat32)的分区.
 reference: [openstack-configuration-drive](https://cloudbase-init.readthedocs.io/en/latest/services.html#openstack-configuration-drive)
@@ -59,7 +61,9 @@ stop_service_on_exit=false
 # C:\Program Files\Cloudbase Solutions\Cloudbase-Init\Python\Lib\site-packages\cloudbaseinit\plugins\common\setuserpassword.py
 self._change_logon_behaviour(user_name, password_injected=injected)   #将此行注释
 ```   
-## 四. 创建元数据分区
+
+## 四. 创建元数据分区   
+
 1. Win+R 打开【运行】对话框，输入 diskmgmt.msc
 2. 创建config-2分区
 ![](https://s2.ax1x.com/2019/03/25/AtURIS.jpg)
@@ -152,5 +156,7 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
                 ]
 }
 ```   
+
 ## 五. 启动cloudbase-init   
+
 ## 六. 问题
