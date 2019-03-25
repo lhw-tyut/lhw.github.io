@@ -161,7 +161,7 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
 }
 ```
 
-## 五. 启动cloudbase-init
+## 五. 启动cloudbase-init   
 ```
 2019-03-25 16:22:34.493 800 INFO cloudbaseinit.init [-] Metadata service loaded: 'ConfigDriveService'
 2019-03-25 16:22:34.493 800 DEBUG cloudbaseinit.init [-] Instance id: None configure_host c:\program files\cloudbase solutions\cloudbase-init\python\lib\site-packages\cloudbaseinit\init.py:202
@@ -184,7 +184,7 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
 2019-03-25 16:22:34.992 800 DEBUG cloudbaseinit.metadata.services.base [-] Using cached copy of metadata: 'openstack/latest/meta_data.json' _get_cache_data c:\program files\cloudbase solutions\cloudbase-init\python\lib\site-packages\cloudbaseinit\metadata\services\base.py:73
 2019-03-25 16:22:34.992 800 WARNING cloudbaseinit.plugins.common.setuserpassword [-] Using admin_pass metadata user password. Consider changing it as soon as possible
 2019-03-25 16:22:34.992 800 INFO cloudbaseinit.plugins.common.setuserpassword [-] Password succesfully updated for user Administrator
-```
+```   
 
 ## 六. 问题
 1. 配置bond
