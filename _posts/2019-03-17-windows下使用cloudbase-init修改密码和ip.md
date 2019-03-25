@@ -23,8 +23,7 @@ Win+R 打开【运行】对话框，输入 gpedit.msc
 - 网址: https://cloudbase.it/cloudbase-init/#download
 - 设置配置文件cloudbase-init.conf
 本例使用openstack(configuration drive),从cdrom,vfat或原始磁盘/分区中检索数据,所以需要创建一个label为config-2,大小为64MB，文件类型为vfat(fat32)的分区.
-reference: [openstack-configuration-drive](https://cloudbase-init.readthedocs.io/en/latest/services.html#openstack-configuration-drive)   
-
+reference: [openstack-configuration-drive](https://cloudbase-init.readthedocs.io/en/latest/services.html#openstack-configuration-drive)
 ```
 [DEFAULT]
 username=Administrator
@@ -187,6 +186,7 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
 2019-03-25 16:22:34.992 800 WARNING cloudbaseinit.plugins.common.setuserpassword [-] Using admin_pass metadata user password. Consider changing it as soon as possible
 2019-03-25 16:22:34.992 800 INFO cloudbaseinit.plugins.common.setuserpassword [-] Password succesfully updated for user Administrator
 ```   
+
 ## 六. 问题   
 1. 配置bond   
 初始化时可以成功配置bond，执行修改操作时会出现报错
