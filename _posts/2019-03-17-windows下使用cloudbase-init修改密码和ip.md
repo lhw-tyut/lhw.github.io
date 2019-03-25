@@ -23,7 +23,8 @@ Win+R 打开【运行】对话框，输入 gpedit.msc
 - 网址: https://cloudbase.it/cloudbase-init/#download
 - 设置配置文件cloudbase-init.conf
 本例使用openstack(configuration drive),从cdrom,vfat或原始磁盘/分区中检索数据,所以需要创建一个label为config-2,大小为64MB，文件类型为vfat(fat32)的分区.
-reference: [openstack-configuration-drive](https://cloudbase-init.readthedocs.io/en/latest/services.html#openstack-configuration-drive)
+reference: [openstack-configuration-drive](https://cloudbase-init.readthedocs.io/en/latest/services.html#openstack-configuration-drive)   
+
 ```
 [DEFAULT]
 username=Administrator
