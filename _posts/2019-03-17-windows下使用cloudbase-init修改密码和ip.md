@@ -162,7 +162,8 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
 }
 ```
 
-## 五. 启动cloudbase-init
+## 五. 启动cloudbase-init   
+- 执行日志
 ```
 2019-03-25 16:22:34.493 800 INFO cloudbaseinit.init [-] Metadata service loaded: 'ConfigDriveService'
 2019-03-25 16:22:34.493 800 DEBUG cloudbaseinit.init [-] Instance id: None configure_host c:\program files\cloudbase solutions\cloudbase-init\python\lib\site-packages\cloudbaseinit\init.py:202
