@@ -86,12 +86,12 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
             "netmask": "255.255.255.0",
             "link": "Ethernet0",
             "type": "ipv4",
-            "ip_address": "10.177.178.35",
+            "ip_address": "10.10.10.10",
             "routes":   [
                 {
                     "network": "0.0.0.0",
                     "netmask": "0.0.0.0",
-                    "gateway": "10.177.178.254"
+                    "gateway": "10.10.10.254"
                 }
                         ],
             "services": [
@@ -124,28 +124,28 @@ self._change_logon_behaviour(user_name, password_injected=injected)   #将此行
     "links":    [
         {
             "type": "phy",
-            "ethernet_mac_address": "6c:92:bf:84:59:6a",
+            "ethernet_mac_address": "00:00:00:00:00:01",
             "id": "Ethernet0"
         },
         {
             "type": "phy",
-            "ethernet_mac_address": "6c:92:bf:62:ab:9e",
+            "ethernet_mac_address": "00:00:00:00:00:02",
             "id": "Ethernet1"
         },
         {
             "type": "phy",
-            "ethernet_mac_address": "6c:92:bf:62:ab:9f",
+            "ethernet_mac_address": "00:00:00:00:00:03",
             "id": "Ethernet2"
         },
         {
-            "ethernet_mac_address": "6c:92:bf:62:ab:9e",
+            "ethernet_mac_address": "00:00:00:00:00:02",
             "bond_mode": "balance-alb",
             "bond_links": ["Ethernet1", "Ethernet2"],
             "type": "bond",
             "id": "bond0"
         },
         {
-            "vlan_mac_address": "6c:92:bf:62:ab:9e",
+            "vlan_mac_address": "00:00:00:00:00:02",
             "vlan_link": "bond0",
             "type": "vlan",
             "id": "vlan0",
