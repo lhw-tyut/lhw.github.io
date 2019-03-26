@@ -13,7 +13,7 @@ tags:
 
 list1 = [1,2,5,2,5,7,3,4,7,34,9]
 
-1.while遍历
+## 1.while遍历
 
 ```
 def delRepeat(list1):
@@ -22,7 +22,7 @@ def delRepeat(list1):
             del list1[list1.index(x)]
    return list1
 ```
-2.for遍历
+## 2.for遍历
 
 ```
 news_list1 = []
@@ -31,12 +31,12 @@ for id in list1:
         news_list1.append(id)
 print (news_list1)
 ```
-3.利用set（）特性
+## 3.利用set（）特性
 
 ```
 new_list1 = set(list1)
 ```
-4.lambda+reduce
+## 4.lambda+reduce
 
 ```
 func = lambda x,y:x if y in x else x + [y]
