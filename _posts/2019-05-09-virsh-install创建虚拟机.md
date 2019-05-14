@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      qemu-img工具
-subtitle:   工作中遇到的细节知识
-date:       2019-05-07
+title:      virsh-install命令
+subtitle:   创建kvm虚拟机
+date:       2019-05-10
 author:     永泉狂客
 header-img: img/post-bg-universe.jpg
 catalog: true
