@@ -92,10 +92,9 @@ def stop_after_5_s():
 
 res = stop_after_5_s()
 print(res)
-```
+```   
 3）代码重试前等待间隔
- - 使用@wait_fixed在程序重试前等待固定时间，下面就是每隔2秒进行重试
-
+ - 使用@wait_fixed在程序重试前等待固定时间，下面就是每隔2秒进行重试   
 ```
 from tenacity import retry, wait_fixed
 import requests
@@ -109,9 +108,9 @@ def wait_2_s():
 
 res = wait_2_s()
 print res
-```
+```   
 
- - 使用@wait_random随机等待，主要应用爬虫的场景比较多
+ - 使用@wait_random随机等待，主要应用爬虫的场景比较多   
 ```
 from tenacity import retry, wait_random
 import requests
@@ -125,10 +124,10 @@ def wait_2_s():
 
 res = wait_2_s()
 print res
-```
+```   
 
- - 使用@wait_exponential可以按照指数的等待时间
-```
+ - 使用@wait_exponential可以按照指数的等待时间   
+``` 
 from tenacity import retry, wait_exponential
 import requests
 
@@ -141,9 +140,9 @@ def wait_2_s():
 
 res = wait_2_s()
 print res
-```
+```   
 
- 4）带有触发条件的retry语句
+ 4）带有触发条件的retry语句   
 ```
 from tenacity import retry, retry_if_exception_type, retry_if_result
 
@@ -163,9 +162,9 @@ def might_return_none():
 @retry(retry=(retry_if_result(is_none_p) | retry_if_exception_type()))
 def might_return_none():
     print("Retry forever ignoring Exceptions with no wait if return value is None")
-```
+```   
 
- 5）在retry前后增加log
+ 5）在retry前后增加log   
 
 ```
 from tenacity import retry, stop_after_attempt, before_log, after_log, before_sleep_log
@@ -188,4 +187,4 @@ def raise_my_exception():
        before_sleep=before_sleep_log(logger, logging.DEBUG))
 def raise_my_exception():
     raise MyException("Fail")
-```
+```   
