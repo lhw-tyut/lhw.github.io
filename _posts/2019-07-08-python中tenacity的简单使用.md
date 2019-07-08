@@ -39,11 +39,12 @@ def conn_req():
 
 res = conn_req()
 print(res)
-
 ```
+
 2）加上终止条件的retry
 
  - 给retry加上一个参数，让它重试3次后不再重试并抛出异常
+
 ```
 from tenacity import retry,stop_after_attempt
 
@@ -58,9 +59,10 @@ def conn_req():
 
 res = conn_req()
 print(res)
-
 ```
+
  - 使用@stop_after_delay可以指定重试间隔，比如下面代码指定5秒后重试
+
 ```
 from tenacity import retry,stop_after_attempt,stop_after_delay
 
@@ -75,7 +77,6 @@ def conn_req():
 
 res = conn_req()
 print(res)
-
 ```
  - 同时可以使用“|”把多个条件进行组合使用
 ```
@@ -92,9 +93,9 @@ def stop_after_5_s():
 res = stop_after_5_s()
 print(res)
 ```
-
 3）代码重试前等待间隔
  - 使用@wait_fixed在程序重试前等待固定时间，下面就是每隔2秒进行重试
+
 ```
 from tenacity import retry, wait_fixed
 import requests
@@ -109,6 +110,7 @@ def wait_2_s():
 res = wait_2_s()
 print res
 ```
+
  - 使用@wait_random随机等待，主要应用爬虫的场景比较多
 ```
 from tenacity import retry, wait_random
@@ -123,8 +125,8 @@ def wait_2_s():
 
 res = wait_2_s()
 print res
-
 ```
+
  - 使用@wait_exponential可以按照指数的等待时间
 ```
 from tenacity import retry, wait_exponential
@@ -139,8 +141,8 @@ def wait_2_s():
 
 res = wait_2_s()
 print res
-
 ```
+
  4）带有触发条件的retry语句
 ```
 from tenacity import retry, retry_if_exception_type, retry_if_result
@@ -162,7 +164,9 @@ def might_return_none():
 def might_return_none():
     print("Retry forever ignoring Exceptions with no wait if return value is None")
 ```
+
  5）在retry前后增加log
+
 ```
 from tenacity import retry, stop_after_attempt, before_log, after_log, before_sleep_log
 import logging
